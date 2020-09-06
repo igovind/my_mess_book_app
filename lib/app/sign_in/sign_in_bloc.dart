@@ -30,5 +30,5 @@ class SignInBloc {
 
   Future<User> signInWithGoogle() async => await _signIn(auth.signInWithGoogle);
 
-  Future<User> signInWithFacebook() async => await _signIn(auth.signInWithFacebook);
+
 }

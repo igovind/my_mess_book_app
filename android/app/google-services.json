@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "61064681672",
+    "firebase_url": "https://mymessbookapp.firebaseio.com",
+    "project_id": "mymessbookapp",
+    "storage_bucket": "mymessbookapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:61064681672:android:62a46423ff49770f1f6dfd",
+        "android_client_info": {
+          "package_name": "com.example.my_mess_book_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "61064681672-t92mjtc5l3fcob0q5umsm7qnd1k8j0gb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.my_mess_book_app",
+            "certificate_hash": "65ff83978a8635b397d61e5cf275594b1b7f8238"
+          }
+        },
+        {
+          "client_id": "61064681672-m2tkqbd1dru74ufiogtcehu1cpqdii5d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBY9HyMtgYJbtKnGN0ZsYZPmMep1jsM9Cw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "61064681672-m2tkqbd1dru74ufiogtcehu1cpqdii5d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
