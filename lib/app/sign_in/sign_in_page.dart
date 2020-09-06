@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:my_mess_book_app/common_widgets/HexaClr.dart';
 import 'package:provider/provider.dart';
 import 'package:my_mess_book_app/app/sign_in/email_sign_in_page.dart';
 import 'package:my_mess_book_app/app/sign_in/sign_in_manager.dart';
@@ -73,12 +74,16 @@ class SignInPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
       appBar: AppBar(
-        title: Text('Time Tracker'),
-        elevation: 2.0,
+        backgroundColor: HexColor("#000033"),
+        shadowColor: Colors.white,
+        title: Text('My Messbook',style: TextStyle(fontSize: 23),),
+        centerTitle: true,
+        elevation: 0.2,
       ),
       body: _buildContent(context),
-      backgroundColor: Colors.grey[200],
+      backgroundColor: HexColor("#000033"),
     );
   }
 
@@ -89,6 +94,7 @@ class SignInPage extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
+          SizedBox(height: 180,),
           SizedBox(
             height: 50.0,
             child: _buildHeader(),
@@ -130,7 +136,7 @@ class SignInPage extends StatelessWidget {
   Widget _buildHeader() {
     if (isLoading) {
       return Center(
-        child: CircularProgressIndicator(),
+        child: CircularProgressIndicator(backgroundColor: Colors.white,),
       );
     }
     return Text(
@@ -138,7 +144,8 @@ class SignInPage extends StatelessWidget {
       textAlign: TextAlign.center,
       style: TextStyle(
         fontSize: 32.0,
-        fontWeight: FontWeight.w600,
+        fontWeight: FontWeight.w500,
+        color: Colors.white
       ),
     );
   }
