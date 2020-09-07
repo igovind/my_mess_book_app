@@ -23,6 +23,7 @@ Future<void> _confirmSignOut(BuildContext context) async {
   ).show(context);
   if (didRequestSignOut == true) {
     _signOut(context);
+    Navigator.of(context).pop();
   }
 }
 
@@ -39,7 +40,7 @@ class _HomePageState extends State<HomePage> {
       home: DefaultTabController(
         length: choices.length,
         child: Scaffold(
-          backgroundColor: Colors.grey[200],
+          backgroundColor: Colors.grey[300],
           appBar: AppBar(
             actions: [
               IconButton(icon: Icon(Icons.exit_to_app), onPressed:()=> _confirmSignOut(context))

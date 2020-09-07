@@ -118,7 +118,7 @@ class SignInPage extends StatelessWidget {
           SizedBox(height: 8.0),
           Text(
             'or',
-            style: TextStyle(fontSize: 14.0, color: Colors.black87),
+            style: TextStyle(fontSize: 14.0, color: Colors.white),
             textAlign: TextAlign.center,
           ),
           SizedBox(height: 8.0),
@@ -132,7 +132,6 @@ class SignInPage extends StatelessWidget {
       ),
     );
   }
-
   Widget _buildHeader() {
     if (isLoading) {
       return Center(
